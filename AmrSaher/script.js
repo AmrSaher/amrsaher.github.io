@@ -5,10 +5,7 @@ const body = document.body;
 const toggleThemeBtn = document.querySelector('#toggle-theme');
 let theme = window.localStorage.getItem('theme');
 
-if (!theme) {
-    window.localStorage.setItem('theme', 'light');
-    theme = window.localStorage.getItem('theme');
-}
+console.log(theme);
 setTheme(theme);
 
 for (let i = 0; i < hl.length; i++) {
