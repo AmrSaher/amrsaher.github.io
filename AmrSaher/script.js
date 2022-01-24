@@ -1,11 +1,11 @@
+window.localStorage.setItem('theme');
+
 const header = document.querySelector('.header');
 const nav = document.querySelector('.header .links');
 const hl = document.querySelectorAll('.header .links a');
 const body = document.body;
 const toggleThemeBtn = document.querySelector('#toggle-theme');
 let theme = window.localStorage.getItem('theme');
-
-console.log(theme);
 setTheme(theme);
 
 for (let i = 0; i < hl.length; i++) {
