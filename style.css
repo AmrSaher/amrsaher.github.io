@@ -1,1 +1,33 @@
+/* MAIN RULES */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* END MAIN RULES */
 
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #444;
+}
+/* END HEADEr */
+
+/* CANVAS */
+#canvas {
+    background-color: #fff;
+}
+
+#canvas:hover {
+    cursor: crosshair;
+}
+/* END CANVAS */
