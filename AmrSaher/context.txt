@@ -1,7 +1,0 @@
-- [x] Header
-- [x] Land
-- [x] Services
-- [x] Technologies
-- [x] Contact us
-- [x] Footer
-- [x] Fix bugs
