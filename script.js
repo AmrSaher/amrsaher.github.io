@@ -1,46 +1,44 @@
-window.addEventListener('load', () => {
-    // Static Vars
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    
-    // Dynamic Vars
-    let painting = false;
+const header = document.querySelector('.header');
+const nav = document.querySelector('.header .links');
+const hl = document.querySelectorAll('.header .links a');
+const body = document.body;
+const toggleThemeBtn = document.querySelector('#toggle-theme');
+let theme = window.localStorage.getItem('theme');
+if (theme == null) {
+    theme = window.localStorage.setItem('theme', 'light');
+    setTheme(theme);
+} else {
+    setTheme(theme);
+}
 
-    // Resizing
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+for (let i = 0; i < hl.length; i++) {
+    let link = hl[i];
+    link.onclick = hideLinks;
+}
 
-    // Main Funcs
-    function startPos(e) {
-        if (e.button === 0) {
-            painting = true;
-            draw(e);
-        }
-    };
+function showLinks() {
+    nav.style.right = '0';
+}
 
-    function finishPos() {
-        painting = false;
-        ctx.beginPath();
-    };
+function hideLinks() {
+    nav.style.right = '-110%';
+}
 
-    function draw(e) {
-        if (!painting) return;
-        ctx.lineWidth = (fontSize.value <= 100) && (fontSize) ? fontSize.value : 5;
-        ctx.lineCap = 'round';
-        ctx.strokeStyle = color.value;
+function toggleTheme() {
+    let className = body.className === 'dark' ? 'light' : 'dark';
+    setTheme(className);
+    window.localStorage.setItem('theme', className);
+}
 
-        ctx.lineTo(e.clientX, e.clientY);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY);
+function setTheme(th) {
+    body.className = th;
+    if (th === 'light') {
+        toggleThemeBtn.className = 'fas fa-toggle-off';
+    } else if (th === 'dark') {
+        toggleThemeBtn.className = 'fas fa-toggle-on';
     }
+}
 
-    // Main Listeners
-    canvas.addEventListener('mousedown', startPos);
-    canvas.addEventListener('mouseup', finishPos);
-    canvas.addEventListener('mousemove', draw);
-});
-
-window.addEventListener('keydown', (e) => {
-    console.log(e);
-});
+window.onscroll = function () { 
+    scrollY >= 100 ? header.style.backgroundColor = '#00000023' : header.style.background = 'none';
+};
