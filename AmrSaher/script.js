@@ -4,13 +4,12 @@ const hl = document.querySelectorAll('.header .links a');
 const body = document.body;
 const toggleThemeBtn = document.querySelector('#toggle-theme');
 let theme = window.localStorage.getItem('theme');
-
-if (!theme) {
-    window.localStorage.setItem("theme", "light");
-    theme = window.localStorage.getItem('theme');
+if (theme == null) {
+    theme = window.localStorage.setItem('theme', 'light');
+    setTheme(theme);
+} else {
+    setTheme(theme);
 }
-
-setTheme(theme);
 
 for (let i = 0; i < hl.length; i++) {
     let link = hl[i];
