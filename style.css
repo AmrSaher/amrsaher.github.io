@@ -132,6 +132,52 @@ header .social-media #icon {
 header.active .social-media #icon {
     fill: #fff;
 }
+header .toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+header .toggle:hover {
+    color: var(--main-color);
+}
+header.active .toggle {
+    color: #fff;
+}
+header.active .toggle:hover {
+    color: #000;
+}
+@media (max-width: 768px) {
+    header .toggle {
+        display: block;
+    }
+    header .social-media {
+        display: none;
+    }
+    header .links {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #1d3f18;
+    }
+    header .links.active {
+        left: 0;
+    }
+    header .links ul {
+        padding: 50px;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+    }
+    header .links a {
+        color: #fff;
+    }
+    header .links a:hover {
+        color: var(--main-color);
+    }
+}
 
 section {
     width: 100%;
@@ -226,6 +272,19 @@ section .section_title::after {
     font-size: 25px;
     font-weight: 500;
 }
+@media (max-width: 768px) {
+    .about .content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .about .content a {
+        margin: auto;
+    }
+    .about .hero-img {
+        width: 100%;
+    }
+}
 
 .skills {
     background-color: var(--section-bg);
@@ -254,6 +313,7 @@ section .section_title::after {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 .skills ul li {
     display: flex;
@@ -267,6 +327,13 @@ section .section_title::after {
 }
 .skills ul li span {
     font-size: 50px;
+}
+@media (max-width: 768px) {
+    .skills .content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
 }
 
 .services {
@@ -337,6 +404,11 @@ section .section_title::after {
 }
 .contact form input:focus, textarea:focus {
     outline: 1px solid var(--main-color);
+}
+@media (max-width: 768px) {
+    .contact form {
+        width: 300px;
+    }
 }
 
 footer {
