@@ -4,162 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- END FONT AWESOME -->
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- END FONTS -->
-
-    <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
-    <!-- END STYLES -->
     <title>Amr Saher</title>
 </head>
-<body class="dark">
-    <!-- HEADER -->
-    <header class="header">
-        <div class="brand">
-            <h2 class="header_title">Amr</h2>
-        </div>
-        <nav class="links">
-            <div class="close">
-                <span></span>
-                <i class="fas fa-times" onclick="hideLinks()"></i>
+<body>
+    <header>
+        <div class="container">
+            <div class="brand">
+                <h1>Amr Saher</h1>
             </div>
-            <ul>
-                <a href="#home" class="header_link">Home</a>
-                <a href="#services" class="header_link">Services</a>
-                <a href="#experience" class="header_link">Experience</a>
-                <a href="#contact" class="header_link">Contact us</a>
-                <i class="fas fa-toggle-on" id="toggle-theme" onclick="toggleTheme()"></i>
-            </ul>
-        </nav>
-        <i class="fas fa-bars header_toggle" onclick="showLinks()"></i>
+            <nav class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#">
+                        <box-icon type='logo' name='github' color="#6dae65"></box-icon>
+                    </a></li>
+                    <li><a href="#">
+                        <box-icon type='logo' name='twitter' color="#6dae65"></box-icon>
+                    </a></li>
+                    <li><a href="#">
+                        <box-icon name='youtube' type='logo' color="#6dae65"></box-icon>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <!-- END HEADER -->
 
-    <!-- HOME -->
     <section class="home" id="home">
         <div class="container">
-            <div class="content">
-                <h3 class="name">I'am Amr Saher</h3>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem expedita nisi veritatis, mollitia ducimus harum laboriosam tempora adipisci rerum quia ullam eum temporibus labore? Eos modi temporibus assumenda ipsam ullam.
-                </p>
-            </div>
-            <img src="./img/home.jpg" alt="home_img" class="home_img">
+            <span>Hello,</span>
+            <h1>I'm Amr Saher</h1>
+            <p>Web Developer</p>
+            <span>From Egypt</span>
+            <a href="#" class="btn">Hire Me</a>
         </div>
     </section>
-    <!-- END HOME -->
 
-    <!-- SERVICES -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section_title">About Me</h2>
+            <div class="content">
+                <img src="./assets/images/home.jpg" alt="hero image" class="hero-img">
+                <div class="text">
+                    <h3>Developing is my career</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.</p>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section_title">My Skills</h2>
+            <div class="content">
+                <div class="text">
+                    <h3>Skills Reflects Our Knowledge</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
+                    <span>1 Year Of Experience</span>
+                </div>
+                <ul>
+                    <li>
+                        <h4>HTML</h4>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <h4>CSS</h4>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <h4>JS</h4>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <h4>PHP</h4>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <h4>MYSQL</h4>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <h4>Laravel</h4>
+                        <span>90%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="services" id="services">
-        <h2 class="section_title">services</h2>
         <div class="container">
+            <h2 class="section_title">My Services</h2>
             <div class="content">
-                <div class="card">
-                    <i class="fas fa-code logo"></i>
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis voluptatem beatae quaerat, quisquam tempore placeat deserunt, assumenda ab soluta nemo nesciunt nostrum harum cum suscipit maiores molestias temporibus consectetur!
-                    </p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-code logo"></i>
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis voluptatem beatae quaerat, quisquam tempore placeat deserunt, assumenda ab soluta nemo nesciunt nostrum harum cum suscipit maiores molestias temporibus consectetur!
-                    </p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-code logo"></i>
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis voluptatem beatae quaerat, quisquam tempore placeat deserunt, assumenda ab soluta nemo nesciunt nostrum harum cum suscipit maiores molestias temporibus consectetur!
-                    </p>
-                </div>
+                <ul class="cards">
+                    <li class="card">
+                        <i class="material-symbols-outlined">desktop_windows</i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi</p>
+                    </li>
+                    <li class="card">
+                        <i class="material-symbols-outlined">desktop_windows</i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi</p>
+                    </li>
+                    <li class="card">
+                        <i class="material-symbols-outlined">desktop_windows</i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi</p>
+                    </li>
+                    <li class="card">
+                        <i class="material-symbols-outlined">desktop_windows</i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi</p>
+                    </li>
+                    <li class="card">
+                        <i class="material-symbols-outlined">desktop_windows</i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi</p>
+                    </li>
+                    <li class="card">
+                        <i class="material-symbols-outlined">desktop_windows</i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-    <!-- END SERVICES -->
 
-    <!-- EXPERIENCE -->
-    <section class="experience" id="experience">
-        <h2 class="section_title">experience</h2>
-        <div class="container">
-            <div class="content">
-                <div class="card">
-                    <img src="./img/html.png" alt="logo" class="logo">
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, at repellendus numquam quas omnis sunt quos, vitae alias error repudiandae quod dolorum. Quae saepe quos officia dolor nisi nobis! Numquam.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./img/css.png" alt="logo" class="logo">
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, at repellendus numquam quas omnis sunt quos, vitae alias error repudiandae quod dolorum. Quae saepe quos officia dolor nisi nobis! Numquam.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./img/js.png" alt="logo" class="logo">
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, at repellendus numquam quas omnis sunt quos, vitae alias error repudiandae quod dolorum. Quae saepe quos officia dolor nisi nobis! Numquam.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./img/php.png" alt="logo" class="logo">
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, at repellendus numquam quas omnis sunt quos, vitae alias error repudiandae quod dolorum. Quae saepe quos officia dolor nisi nobis! Numquam.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./img/vue.png" alt="logo" class="logo">
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, at repellendus numquam quas omnis sunt quos, vitae alias error repudiandae quod dolorum. Quae saepe quos officia dolor nisi nobis! Numquam.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./img/git.png" alt="logo" class="logo">
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, at repellendus numquam quas omnis sunt quos, vitae alias error repudiandae quod dolorum. Quae saepe quos officia dolor nisi nobis! Numquam.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END EXPERIENCE -->
-
-    <!-- CONTACT US -->
     <section class="contact" id="contact">
-        <h2 class="section_title">contact us</h2>
         <div class="container">
+            <h2 class="section_title">Contact Me</h2>
             <div class="content">
-                <div class="card">
-                    <i class="fas fa-phone logo"></i>
-                    <p class="desc">
-                        01550424976
-                    </p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-envelope logo"></i>
-                    <p class="desc">
-                        amrosaher1234@gmail.com
-                    </p>
-                </div>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="10"></textarea>
+                    <input type="submit" value="Send" class="btn">
+                </form>
             </div>
         </div>
     </section>
-    <!-- END CONTACT US -->
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        Maked by Amr Saher &copy; 2022
+    <footer>
+        <p>Made With 💓 By Amr Saher, Copyright &copy; 2022</p>
     </footer>
-    <!-- END FOOTER -->
 
-    <!-- SCRIPTS -->
-    <script src="./script.js"></script>
-    <!-- END SCRIPTS -->
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 </html>
