@@ -35,6 +35,18 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+/* style scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
 
 .btn {
     background-color: var(--main-color);
@@ -77,6 +89,16 @@ body {
     .container {
         width: 1170px;
     }
+}
+
+#bar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    z-index: 999;
 }
 
 header {
@@ -312,7 +334,7 @@ section .section_title::after {
 .skills ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 70px;
     justify-content: center;
 }
 .skills ul li {
