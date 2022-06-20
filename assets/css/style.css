@@ -220,7 +220,7 @@ section .section_title::after {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(./assets/images/hero.png);
+    background-image: url(../images/hero.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ section .section_title::after {
 .skills ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
 .skills ul li {

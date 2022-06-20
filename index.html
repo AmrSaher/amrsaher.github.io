@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Amr Saher</title>
 </head>
 <body>
@@ -25,13 +25,13 @@
             </nav>
             <div class="social-media">
                 <ul>
-                    <li><a href="#">
+                    <li><a href="https://github.com/AmrSaher" target="_blank">
                         <box-icon type='logo' name='github' color="#6dae65"></box-icon>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="https://twitter.com/amr_saher13" target="_blank">
                         <box-icon type='logo' name='twitter' color="#6dae65"></box-icon>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="https://www.youtube.com/channel/UCRFYcQN8vY-aUb5loPo2eHw" target="_blank">
                         <box-icon name='youtube' type='logo' color="#6dae65"></box-icon>
                     </a></li>
                 </ul>
@@ -46,7 +46,7 @@
             <h1>I'm Amr Saher</h1>
             <p>Web Developer</p>
             <span>From Egypt</span>
-            <a href="#" class="btn">Hire Me</a>
+            <a href="#contact" class="btn">Hire Me</a>
         </div>
     </section>
 
@@ -147,10 +147,13 @@
         <div class="container">
             <h2 class="section_title">Contact Me</h2>
             <div class="content">
-                <form>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Message" rows="10"></textarea>
+                <form action="https://formsubmit.co/amrosaher1234@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://amrsaher.github.io/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission wooo!">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email Address" name="email" required>
+                    <textarea placeholder="Message" rows="10" name="message" required></textarea>
                     <input type="submit" value="Send" class="btn">
                 </form>
             </div>
@@ -161,7 +164,7 @@
         <p>Made With 💓 By Amr Saher, Copyright &copy; 2022</p>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./assets/js/app.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 </html>
