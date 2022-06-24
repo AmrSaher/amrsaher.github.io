@@ -55,8 +55,8 @@ body {
     padding: 10px 15px;
     font-size: 20px;
     width: fit-content;
-    border: none;
     cursor: pointer;
+    border: none;
 }
 .btn:hover {
     background-color: transparent;
@@ -423,9 +423,13 @@ section .section_title::after {
     border-radius: 10px;
     outline: none;
     border: 1px solid #777;
+    transition: 0s all ease;
 }
 .contact form input:focus, textarea:focus {
     outline: 1px solid var(--main-color);
+}
+.contact form .btn {
+    width: 100%;
 }
 @media (max-width: 768px) {
     .contact form {
