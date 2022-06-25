@@ -361,13 +361,13 @@ section .section_title::after {
 .services {
     background-color: #fff;
 }
-.services .cards {
+.cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
-.services .cards .card {
+.cards .card {
     width: 300px;
     background-color: #fff;
     box-shadow: var(--main-box-shadow);
@@ -380,7 +380,7 @@ section .section_title::after {
     gap: 20px;
     border-radius: 10px;
 }
-.services .card i {
+.cards .card i {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -391,21 +391,40 @@ section .section_title::after {
     justify-content: center;
     align-items: center;
 }
-.services .card h3 {
+.cards .card img {
+    margin-left: 0;
+    margin-top: -20px;
+    width: calc(100% + 40px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cards .card h3 {
     font-weight: 400;
     font-size: 25px;
 }
-.services .card:hover {
+.cards .card a {
+    background-color: #000;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.cards .card:hover {
     background-color: var(--main-color);
     color: #fff;
 }
-.services .card:hover i {
+.cards .card:hover i {
     background-color: #fff;
     color: var(--main-color);
 }
+.cards .card:hover a {
+    color: #fff;
+}
+
+.front-end-projects {
+    background-color: var(--section-bg);
+}
 
 .contact {
-    background-color: var(--section-bg);
+    background-color: #fff;
 }
 .contact form {
     display: flex;
