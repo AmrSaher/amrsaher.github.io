@@ -27,6 +27,10 @@ a {
     color: var(--text-color);
 }
 
+img,i {
+    user-select: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -99,6 +103,7 @@ body {
     width: 0;
     height: 5px;
     z-index: 999;
+    transition-duration: 0s;
 }
 
 header {
@@ -106,7 +111,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 75px;
     z-index: 99;
 }
 header.active {

@@ -25,3 +25,12 @@ window.onscroll = function () {
         });
     }
 };
+
+const sr = ScrollReveal({origin: 'top', duration: 2500, distance: '60px', delay: 150});
+
+sr.reveal('.home .container');
+sr.reveal('.about .container');
+sr.reveal('.skills .container');
+sr.reveal('.services .container');
+sr.reveal('.front-end-projects .container .card');
+sr.reveal('.contact .container');
