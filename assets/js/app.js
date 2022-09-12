@@ -49,7 +49,7 @@ sr.reveal('.services .container .content .cards .card-3', {origin: 'right', dela
 
 // Projects
 sr.reveal('.front-end-projects .container .section_title');
-sr.reveal('.front-end-projects .container .content', {rotate: {x: 50, z: 20}, delay: 300});
+sr.reveal('.front-end-projects .container .content', {rotate: {x: 50}, delay: 300});
 
 // Contact
 sr.reveal('.contact .container .section_title');
